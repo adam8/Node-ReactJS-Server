@@ -16,7 +16,7 @@ module.exports = React.createClass({
   // Once the component has been mounted, we can enable the button
   componentDidMount: function() {
     this.setState({disabled: false})
-  },
+  }, 
 
   // Then we just update the state whenever its clicked by adding a new item to
   // the list - but you could imagine this being updated with the results of
