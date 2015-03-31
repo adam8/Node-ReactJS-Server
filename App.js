@@ -23,7 +23,7 @@ module.exports = React.createClass({
   // AJAX calls, etc
   handleClick: function() {
     this.setState({
-      items: this.state.items.concat('Item ' + this.state.items.length)
+      items: this.state.items.concat({"event":"item "+this.state.items.length})
     })
   },
 
@@ -38,7 +38,7 @@ module.exports = React.createClass({
       button({onClick: this.handleClick, disabled: this.state.disabled}, 'Add Item'),
 
       ul({children: this.state.items.map(function(item) {
-        return li(null, item)
+        return li(null, item.event)
       })})
 
     )

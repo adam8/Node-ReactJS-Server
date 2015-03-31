@@ -27,10 +27,33 @@ http.createServer(function(req, res) {
     // filesystem or API, depending on the logged-in user, etc.
     var props = {
       items: [
-        'Item 0',
-        'Item 1',
-        'Item </script>',
-        'Item <!--inject!-->',
+        {"event date":"2015-04-13","event time":"05:15","stream date":"2015-04-13","stream time":"07:15","channel":"maintenance","stream":"equipment","priority":"med","event":"3514 out of service","link":"m.ax/df87"},
+        {"event date":"2015-04-13","event time":"07:15","stream date":"2015-04-13","stream time":"07:45","channel":"operations","stream":"forecast","priority":"high","event":"30's shortage forecast today","link":"m.ax/z74y"},
+        {"event date":"2015-04-13","event time":"07:15","stream date":"2015-04-13","stream time":"07:50","channel":"maintenance","stream":"equipment","priority":"medium","event":"3512 out of service","link":"m.ax/s74t"},
+        {"event date":"2015-04-13","event time":"07:20","stream date":"2015-04-13","stream time":"07:50","channel":"maintenance","stream":"equipment","priority":"medium","event":"3510 out of service","link":"m.ax/bd4y"},
+        {"event date":"2015-04-13","event time":"08:00","stream date":"2015-04-13","stream time":"08:00","channel":"operations","stream":"forecast","priority":"high","event":"RS shortage forecast today","link":"m.ax/kj8l"},
+        {"event date":"2015-04-13","event time":"09:10","stream date":"2015-04-13","stream time":"09:12","channel":"operations","stream":"equipment","priority":"high","event":"RS10 returned to service","link":"m.ax/d9ij"},
+        {"event date":"2015-04-13","event time":"08:00","stream date":"2015-04-13","stream time":"09:15","channel":"maintenance","stream":"equipment","priority":"high","event":"RS11 out of service","link":"m.ax/4ftf"},
+        {"event date":"2015-04-13","event time":"09:20","stream date":"2015-04-13","stream time":"09:35","channel":"operations","stream":"vessel","priority":"low","event":"MV Swift delayed 11/9/14","link":"m.ax/s7fd"},
+        {"event date":"2015-04-13","event time":"10:35","stream date":"2015-04-13","stream time":"10:45","channel":"operations","stream":"vessel","priority":"medium","event":"MV Taylor early 11/5/14","link":"m.ax/d90t"},
+        {"event date":"2015-04-13","event time":"11:15","stream date":"2015-04-13","stream time":"11:15","channel":"operations","stream":"equipment","priority":"medium","event":"3514 back in service","link":"m.ax/bd4y"},
+        {"event date":"2015-04-13","event time":"14:10","stream date":"2015-04-13","stream time":"14:10","channel":"operations","stream":"equipment","priority":"high","event":"RS11 back in service","link":"m.ax/4ftf"},
+        {"event date":"2015-04-13","event time":"14:20","stream date":"2015-04-13","stream time":"14:20","channel":"operations","stream":"equipment","priority":"medium","event":"3512 back in service","link":"m.ax/bd4y"},
+        {"event date":"2015-04-13","event time":"14:25","stream date":"2015-04-13","stream time":"14:25","channel":"operations","stream":"equipment","priority":"medium","event":"3510 back in service","link":"m.ax/bd4y"},
+        {"event date":"2015-04-14","event time":"06:18","stream date":"2015-04-14","stream time":"07:30","channel":"maintenance","stream":"equipment","priority":"high","event":"RS10 out of service, 1 day of uptime","link":"m.ax/b74y"},
+        {"event date":"2015-04-14","event time":"08:00","stream date":"2015-04-14","stream time":"08:00","channel":"maintenance","stream":"work","priority":"medium","event":"PM compliance below target","link":"m.ax/d87w"},
+        {"event date":"2015-04-14","event time":"10:45","stream date":"2015-04-14","stream time":"11:30","channel":"maintenance","stream":"equipment","priority":"high","event":"RS04 out of service","link":"m.ax/b74y"},
+        {"event date":"2015-04-14","event time":"12:00","stream date":"2015-04-14","stream time":"12:00","channel":"operations","stream":"equipment","priority":"high","event":"RS shortage forecast tomorrow","link":"m.ax/kj8l"},
+        {"event date":"2015-04-14","event time":"12:34","stream date":"2015-04-14","stream time":"12:50","channel":"maintenance","stream":"equipment","priority":"medium","event":"3517 out of service","link":"m.ax/4ftf"},
+        {"event date":"2015-04-14","event time":"14:12","stream date":"2015-04-14","stream time":"14:12","channel":"operations","stream":"vessel","priority":"medium","event":"MV Susanne early 11/4/14","link":"m.ax/39aq"},
+        {"event date":"2015-04-14","event time":"14:15","stream date":"2015-04-14","stream time":"14:15","channel":"operations","stream":"equipment","priority":"high","event":"RS04 return to service","link":"m.ax/d9ij"},
+        {"event date":"2015-04-14","event time":"14:50","stream date":"2015-04-14","stream time":"14:50","channel":"operations","stream":"vessel","priority":"low","event":"MV Sky Dream delayed 11/7/14","link":"m.ax/s7fd"},
+        {"event date":"2015-04-14","event time":"15:05","stream date":"2015-04-14","stream time":"15:10","channel":"operations","stream":"vessel","priority":"medium","event":"MV Ocean Sky early 11/5/14","link":"m.ax/d90t"},
+        {"event date":"2015-04-14","event time":"16:10","stream date":"2015-04-14","stream time":"16:10","channel":"maintenance","stream":"work","priority":"low","event":"wo budget exceeded","link":"m.ax/v0kj"},
+        {"event date":"2015-04-15","event time":"09:12","stream date":"2015-04-15","stream time":"09:12","channel":"operations","stream":"vessel","priority":"medium","event":"MV Graul early 11/4/14","link":"m.ax/45rf"},
+        {"event date":"2015-04-15","event time":"10:10","stream date":"2015-04-15","stream time":"10:10","channel":"operations","stream":"vessel","priority":"low","event":"MV Dancer delayed 11/12/14","link":"m.ax/87dsa"},
+        {"event date":"2015-04-15","event time":"10:45","stream date":"2015-04-15","stream time":"10:45","channel":"operations","stream":"equipment","priority":"high","event":"RS08 return to service","link":"m.ax/34de"},
+        {"event date":"2015-04-15","event time":"10:15","stream date":"2015-04-15","stream time":"10:52","channel":"maintenance","stream":"equipment","priority":"high","event":"RS08 out of service","link":"m.ax/d87sa"}
       ]
     }
 
